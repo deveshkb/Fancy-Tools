@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-REPO_URL="https://github.com/deveshkb/fancy_tools.git"
+REPO_URL="https://github.com/deveshkb/Fancy-Tools.git"
 SRC_DIR="$HOME/src/fancy_tools"
 
 # Fonction : ajoute une ligne si elle n'existe pas déjà
