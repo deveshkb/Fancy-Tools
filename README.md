@@ -6,7 +6,7 @@ Projet de scripts Shell permettant d’automatiser un environnement Git avec ali
 ---
 
 ## Prérequis
-- Linux / macOS
+- Linux
 - Git installé
 - Bash ou Zsh
 - Compte GitHub
