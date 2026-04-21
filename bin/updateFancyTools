@@ -1,0 +1,27 @@
+#!/bin/bash
+set -e
+
+SRC_DIR="$HOME/src/fancy_tools"
+
+echo "=== FancyTools Update ==="
+
+# Vérifie que le repo existe
+if [ ! -d "$SRC_DIR" ]; then
+    echo "Erreur : dépôt non trouvé. Lance install.sh d'abord."
+    exit 1
+fi
+
+cd "$SRC_DIR"
+
+# Vérifie la branche courante
+current_branch=$(git branch --show-current)
+
+if [ "$current_branch" != "main" ]; then
+    echo "Erreur : vous devez être sur la branche main (actuel: $current_branch)"
+    exit 1
+fi
+
+echo "Pull des dernières modifications..."
+git pull
+
+echo "Mise à jour terminée."
